@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>  
+    <div className="md:flex">
+      <div className="md:flex-shrink-0">
+        <img className="rounded-lg md:w-56" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Woman paying for a purchase"/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+      <div className="mt-4 md:mt-0 md:ml-6">
+        <div className="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+          Marketing
+        </div>
+        <a href="/get-started" className="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+          Finding customers for your new business
+        </a>
+        <p className="mt-2 text-gray-600">
+          Getting a new business off the ground is a lot of hard work.
+          Here are five ideas you can use to find your first customers.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
+</>
   )
 }
 
-export default App
+
+
